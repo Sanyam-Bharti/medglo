@@ -6,7 +6,7 @@
         <div id="sidebar-wrapper">
             <side-menu [menuList]="menuList" (menuToggle)="onMenuToggle($event)"></side-menu>
         </div>
-        <div id="main-wrapper" >
+        <div id="main-wrapper" [ngClass]="getClassName()">
             <div id="main">
                 <!-- <router-outlet></router-outlet> -->
             </div>
