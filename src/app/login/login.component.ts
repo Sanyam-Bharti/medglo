@@ -31,7 +31,7 @@ export class LoginComponent implements OnInit {
 
     if (Issuccess) {
       console.log(localStorage.getItem('currentUser'));
-      //this.router.navigate(['/dashboard']);
+      this.router.navigate(['/table']);
     } else {
       console.log(`isSuccess ${Issuccess}`);
     }
