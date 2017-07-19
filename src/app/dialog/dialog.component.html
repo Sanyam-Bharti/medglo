@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row header">
+        <div class="col-sm-6 ">
+            <div class="title">Authorize Report</div>
+        </div>
+        <div class="col-sm-4 "></div>
+        <div class="col-sm-2">
+            <div class="close"><i class="material-icons" (click)="onClose()">clear</i></div>
+        </div>
+    </div>
+
+    <div class="row alignment">
+            <div class="col-sm-11">
+                <md-select>
+            <md-option *ngFor="let db of doctorDetails" [value]="db.Doctor">{{db.Doctor}}</md-option>
+        </md-select>
+                
+            </div>
+            <div class="col-sm-6">
+        <a md-button class="btn_create bottom" (click)="onAuthorize()">Authorize</a>
+    </div>
+        </div>
+        
+    <!-- <div class="col-sm-6">
+        <md-select>
+            <md-option *ngFor="let db of doctorDetails" [value]="db.Doctor">{{db.Doctor}}</md-option>
+        </md-select>
+    </div>
+    <div class="col-sm-6">
+        <a md-button class="btn_create bottom" (click)="onAuthorize()">Authorize</a>
+    </div> -->
+</div>

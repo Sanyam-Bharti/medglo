@@ -37,7 +37,7 @@
 }
 
 #main-wrapper.normal {
-    width: calc(100vw - 64px);
+    width: calc(100vw - 200px);
 }
 
 .footer {
@@ -48,7 +48,8 @@
 #main {
     height: calc(100vh - 125px);
     /*100 + 25*/
-    overflow-y: auto;
+     overflow-y: auto; 
+     width: calc(100vw - 200px);
 }
 
 .outer {

@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import {HttpModule } from '@angular/http';
 import {RouterModule} from '@angular/router';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { MaterialModule, MdDialogModule } from '@angular/material';
@@ -13,6 +14,9 @@ import { HeaderComponent } from './header/header.component';
 import { MenuComponent } from './menu/menu.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginService } from "app/login/login.service";
+import { TableComponent } from './table/table.component';
+import { DetailService } from "app/detail.service";
+import { DialogComponent } from './dialog/dialog.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,9 @@ import { LoginService } from "app/login/login.service";
     LoginComponent,
     HeaderComponent,
     MenuComponent,
-    DashboardComponent
+    DashboardComponent,
+    TableComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,
@@ -28,6 +34,7 @@ import { LoginService } from "app/login/login.service";
     MaterialModule, 
     MdDialogModule,
     FormsModule,
+    NgxDatatableModule,
     BrowserAnimationsModule,
      RouterModule.forRoot([
       {
@@ -37,10 +44,15 @@ import { LoginService } from "app/login/login.service";
       {
         path: 'dashboard',
         component: DashboardComponent
+      },
+      {
+        path: 'table',
+        component: TableComponent
       }
     ])
   ],
-  providers: [MenuService, LayoutService, LoginService],
-  bootstrap: [AppComponent]
+  providers: [MenuService, LayoutService, LoginService,DetailService],
+  bootstrap: [AppComponent],
+  entryComponents: [DialogComponent]
 })
 export class AppModule { }
