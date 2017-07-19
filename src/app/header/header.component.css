@@ -23,13 +23,6 @@ i{
 
 }
 .navbar-brand {
-  background: lightblue;
-  height: 72px;
   font-size:22px;
   vertical-align: middle !important;
-
-}
-.dropdown-toggle {
-  height: 72px;
-  
 }
