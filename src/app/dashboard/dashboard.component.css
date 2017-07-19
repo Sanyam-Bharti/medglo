@@ -59,3 +59,11 @@
 .navbar {
     padding: 0px;
 }
+.images {
+    display: inline-block;
+    width: 250px;
+    height: 125px;
+    margin: 10px;
+    margin-left: 70px;
+    border: 3px solid #73AD21;  
+}
