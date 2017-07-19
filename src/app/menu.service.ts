@@ -8,13 +8,11 @@ export class MenuService {
   getMenus(){
     //This could be a service call for dynamic menus
     return [
-      { id: 0, text: 'Home', name: 'home'}, 
-      { id: 1, text: 'Databases', name: 'Database'}, 
-      { id: 2, text: 'Group', name: 'group'}, 
-      { id: 3, text: 'Hosts',  name: 'host'}, 
-      { id: 4, text: 'Forests',  name: 'forest'}, 
-      { id: 5, text: 'Clusters',  name: 'clusters'}, 
-      { id: 6, text: 'Security',  name: 'security'}, 
+      { id: 0, text: 'My Dashboard', name: 'My Dashboard',  url:'/dashboard'}, 
+      { id: 1, text: 'My Upcoming Tests', name: 'My Upcoming Tests',  url:'/dashboard'}, 
+      { id: 2, text: 'New Reports', name: 'New Reports',  url:'/dashboard'}, 
+      { id: 3, text: 'Authorized Reports',  name: 'Authorized Reports',  url:'/dashboard'}, 
+      { id: 4, text: 'Doctor Consultation',  name: 'Doctor Consultation',  url:'/dashboard'}, 
     ];
   }
 

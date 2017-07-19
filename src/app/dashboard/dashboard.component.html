@@ -1,10 +1,10 @@
 <div class="flex-column outer ">
-    <div id="header" class="navbar navbar-default navbar-fixed-top ">
+     <div id="header" class="navbar navbar-default navbar-fixed-top ">
         <header></header>
-    </div>
+    </div> 
     <div id="wrapper" class="flex-row">
         <div id="sidebar-wrapper">
-            <side-menu [menuList]="menuList" (menuToggle)="onMenuToggle($event)"></side-menu>
+            <side-menu></side-menu>
         </div>
         <div id="main-wrapper" [ngClass]="getClassName()">
             <div id="main">

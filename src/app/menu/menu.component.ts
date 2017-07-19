@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { MenuService } from "app/menu.service";
 
 @Component({
   selector: 'side-menu',
@@ -7,15 +8,16 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-    @Input() menuList: Array<Object>;
+    menuList =  [];
   @Output() menuToggle = new EventEmitter();
   isExpended = false;
   activeMenu = 'home';
-  
-  constructor() { }
+  menu = {};
+  constructor(private menuService: MenuService) { }
 
   ngOnInit(){
-    
+        this.menuList = this.menuService.getMenus();
+
   }
 
   toggle(){

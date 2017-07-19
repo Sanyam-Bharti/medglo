@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-ul {
+/* ul {
     padding: 0;
     list-style: none;
 }
@@ -10,7 +10,7 @@ li {
 
 .inline-block {
     display: inline-block;
-}
+} */
 
 
 /*
@@ -39,7 +39,7 @@ body {
     flex-direction: row;
 }
 
-.ngx-datatable.material .datatable-header {
+/* .ngx-datatable.material .datatable-header {
     background: #6b54b0;
     border-radius: 5px;
     height: 45px;
@@ -78,7 +78,7 @@ body {
 
 .ngx-datatable.material .datatable-body .datatable-body-row .datatable-body-cell:nth-child(2n) {
     background: #d6cfcf;
-}
+} */
 
 .mat-dialog-container {
     padding: 0px!important;
