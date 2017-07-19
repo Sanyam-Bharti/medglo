@@ -14,6 +14,7 @@ export class DashboardComponent implements OnInit {
   tiles= [];
   isExpendedMenu = false;
   rows:Array<Object>;
+  user:object={};
 
     constructor(private patientService: DetailService,private menuService: MenuService, private layoutService: LayoutService){
 
@@ -21,7 +22,19 @@ export class DashboardComponent implements OnInit {
     ngOnInit(){
     this.menuList = this.menuService.getMenus();
     this.tiles = this.layoutService.getMainLayout();
-    this.rows = this.patientService.getPatientDetails();
+  this.user=JSON.parse(localStorage.getItem('currentUser'));
+    console.log('user',this.user);
+
+    if(this.user['role']=='Patient'){
+     this.patientService.getPatientDetails().subscribe(result=>{
+       this.rows=result;
+     });
+    }
+  else if(this.user['role']=='Doctor'){
+     this.patientService.getDoctorDetails().subscribe(result=>{
+       this.rows=result;
+     });
+  }
     console.log('Rows',this.rows);
 
   }

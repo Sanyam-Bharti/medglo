@@ -1,20 +1,31 @@
 <div class="flex-column outer ">
-     <div id="header" class="navbar navbar-default ">
+    <div id="header" class="navbar navbar-default ">
         <header></header>
-    </div> 
+    </div>
     <div id="wrapper" class="flex-row">
         <div id="sidebar-wrapper">
             <side-menu></side-menu>
         </div>
         <div id="main-wrapper">
             <div id="main">
-                <div class="images">aaa</div>
-                <div class="images">aaa</div>
-                <div class="images">aaa</div>
-                <div class="images">aaa</div>
+                <div *ngIf="user.role==='Doctor'">
+                    <p><b>Doctor Dashboard - Doctor's Name: Dr. {{user.name}}</b></p>
+                </div>
+                <div *ngIf="user.role==='Patient'">
+                    <p><b>Patient Dashboard - Patient's Name: {{user.name}}</b></p>
+                </div>
+                <div style="width: 100%">
+                    <div class="images">aaa</div>
+                    <div class="images">aaa</div>
+                    <div class="images">aaa</div>
+                </div>
+                <div >
+                    <p><b>Medical Records</b></p>
+                </div>
                 <!-- <router-outlet></router-outlet> -->
-                 <table [rows]="rows"></table> 
-                                 
+                <div *ngIf="rows">
+                    <table [rows]="rows"></table>
+                </div>
             </div>
         </div>
     </div>

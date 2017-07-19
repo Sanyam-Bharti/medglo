@@ -33,6 +33,7 @@ export class LoginComponent implements OnInit {
       console.log(localStorage.getItem('currentUser'));
       this.router.navigate(['/dashboard']);
     } else {
+      alert('Please Enter valid credentials');
       console.log(`isSuccess ${Issuccess}`);
     }
     // this.loading = true;

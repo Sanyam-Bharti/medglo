@@ -10,6 +10,7 @@ import { DialogComponent } from "app/dialog/dialog.component";
 })
 export class TableComponent implements OnInit {
    @Input() rows: Array<Object>;
+   user:object={};
   //rows: Array<Object>;
   constructor(private patientService: DetailService,vcRef: ViewContainerRef, public dialog: MdDialog) { }
 
@@ -18,6 +19,7 @@ export class TableComponent implements OnInit {
     // this.patientService.getPatientDetails().subscribe(result => {
     //             this.rows = result;
     //         })
+   this.user=JSON.parse(localStorage.getItem('currentUser'));
 
   }
   openDialog(detail) {
