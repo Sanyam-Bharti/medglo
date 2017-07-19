@@ -10,23 +10,16 @@
     </div>
 
     <div class="row alignment">
-            <div class="col-sm-11">
-                <md-select class="search_box">
-            <md-option *ngFor="let db of doctorDetails" [value]="db.Doctor">{{db.Doctor}}</md-option>
-        </md-select>
-                
-            </div>
-            <div class="col-sm-6">
-        <a md-button class="btn_create bottom" (click)="onAuthorize()">Authorize</a>
-    </div>
+        <div class="col-sm-11">
+            <label for="role " class="form-label">Doctor</label>
+            <select class="search_box form-control">
+            <option *ngFor="let db of doctorDetails" [value]="db.Doctor">{{db.Doctor}}</option>
+        </select>
         </div>
         
-    <!-- <div class="col-sm-6">
-        <md-select>
-            <md-option *ngFor="let db of doctorDetails" [value]="db.Doctor">{{db.Doctor}}</md-option>
-        </md-select>
+        <div class="col-sm-11 auth">
+            <div class="col-sm-7"></div>
+            <div class="col-sm-4"><a md-button class="btn_create bottom" (click)="onAuthorize()">Authorize</a></div>
+        </div>
     </div>
-    <div class="col-sm-6">
-        <a md-button class="btn_create bottom" (click)="onAuthorize()">Authorize</a>
-    </div> -->
 </div>

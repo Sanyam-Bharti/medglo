@@ -61,9 +61,31 @@
 }
 .images {
     display: inline-block;
-    width: 25%;
+    width: 15%;
     height: 125px;
     margin: 10px;
     margin-left: 70px;
-    border: 3px solid #73AD21;  
+    border: 0px solid #73AD21;  
+}
+.notes {
+    background: #337AB7;
+    border-radius: 7px;
+}
+.reports {
+  background:  #5CB85C;
+  border-radius: 7px;
+}
+.auth_reports {
+  background:  #F0AD4E;
+  border-radius: 7px;
+}
+.consultation {
+  background:  #D9534F;
+  border-radius: 7px;
+}
+.icon_size {
+    margin-top: 5%;
+    margin-left: 30%;
+     font-size: 60px; 
+ color: rgba(255, 255, 255, 1);
 }

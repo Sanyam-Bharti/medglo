@@ -1,0 +1,12 @@
+.image {
+    background-image: url("http://wallup.net/wp-content/uploads/2016/05/25/176883-minimalism-geometry-hexagon-simple_background-monochrome-white_background.png");
+    height: 100%;
+}
+.form-label {
+    color: black;
+    font-size: 14px;
+}
+.search_box {
+    width: 40%;
+    margin-left: 14px;
+}

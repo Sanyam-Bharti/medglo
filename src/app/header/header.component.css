@@ -5,7 +5,6 @@
 }
 
 .text_decor a{
-	text-decoration: none;
 	color:black;
 }
 
@@ -26,3 +25,4 @@ i{
   font-size:22px;
   vertical-align: middle !important;
 }
+

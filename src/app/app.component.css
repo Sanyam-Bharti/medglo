@@ -1,7 +1,9 @@
 #wrapper {
     width: 100vw;
 }
-
+.image {
+    background: lightblue;
+}
 #sidebar-wrapper {
     background: #333;
     color: #fff;
