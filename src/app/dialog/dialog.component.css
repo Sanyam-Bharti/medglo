@@ -5,6 +5,14 @@
     -webkit-text-fill-color: white;
 }
 
+.report_header{
+    height: 7%;
+    width: 100%;
+    background-color: #fff;
+    -webkit-text-fill-color: black;
+}
+
+
 .container{
    width: 300px;
    height: 175px;
@@ -12,6 +20,15 @@
    padding: 0px;
    border-radius: 5px;
 }
+
+.report_container{
+   width: 395px;
+   height: 575px;
+   margin:0px;
+   padding: 0px;
+   border-radius: 5px;
+}
+
 .row{
     padding: 0px;
      margin:0px;

@@ -1,10 +1,5 @@
-.icon-Help,.icon-user,.icon-sort-down{
-  font-size:22px;
-  color:black;
-  margin-right: 5px;
-}
-
 .text_decor a{
+  font-size:18px;
 	color:black;
 }
 
@@ -13,6 +8,7 @@ i{
   }
 
  .nav-padding{
+   margin-left: auto;
   vertical-align: middle !important;
 } 
 

@@ -10,6 +10,7 @@ import { MdGridListModule}  from '@angular/material';
 })
 export class DialogComponent implements OnInit {
   selectedDetail: any;
+  dialogView:any;
   constructor(public dialogRef: MdDialogRef<DialogComponent>) { }
 doctorDetails = [
     {

@@ -25,6 +25,15 @@ export class TableComponent implements OnInit {
   openDialog(detail) {
     let dialogRef = this.dialog.open(DialogComponent);
     dialogRef.componentInstance.selectedDetail = detail;
+     dialogRef.componentInstance.dialogView = detail;
+    //dialogRef.componentInstance.onClick();
+  }
+
+  openReortDialog(detail,viewType) {
+    console.log(viewType);
+    let dialogRef = this.dialog.open(DialogComponent);
+    dialogRef.componentInstance.selectedDetail = detail;
+     dialogRef.componentInstance.dialogView = viewType;
     //dialogRef.componentInstance.onClick();
   }
 

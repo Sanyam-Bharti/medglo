@@ -1,7 +1,7 @@
 <h1>MedGlo</h1>
 <div class="col-md-12 image">
   <div class="col-md-8  "></div>
-  <div class="col-md-4  ">
+  <div class="col-md-4 ">
     <h2>Login</h2>
     <form name="form" #f="ngForm" novalidate>
       <div class="form-group">
@@ -17,7 +17,7 @@
       <div class="form-group">
         <label for="role "  class="form-label font"><b>Role</b></label>
         <!-- <input type="text" class="form-control" name="role"  [(ngModel)]="model.role" required /> -->
-        <md-select class="search_box " name="role" [(ngModel)]="model.role">
+        <md-select class="drop_box " name="role" [(ngModel)]="model.role">
           <md-option *ngFor="let role of roles" [value]="role.role" required>{{role.role}}</md-option>
         </md-select>
         <!-- <md-select>
