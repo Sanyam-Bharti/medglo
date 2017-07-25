@@ -6,7 +6,7 @@
         <div class="db_sort"><b>{{column.name}}</b></div>
       </ng-template>
       <ng-template let-row="row" ngx-datatable-cell-template>
-        <div class='col col-name'>{{row.Patient}}</div>
+        <div class='col col-name'>{{ row['owner'].substring(row['owner'].indexOf("#") + 1, row['owner'].length)}}</div>
       </ng-template>
     </ngx-datatable-column>
     <ngx-datatable-column name="Test">
@@ -14,7 +14,7 @@
         <div class="db_sort"><b>{{column.name}}</b></div>
       </ng-template>
       <ng-template let-row="row" ngx-datatable-cell-template>
-        <div class='col col-name'>{{row.Test}}</div>
+        <div class='col col-name'>{{row.EmrID}}</div>
       </ng-template>
     </ngx-datatable-column>
     <ngx-datatable-column name="Date">
@@ -22,7 +22,7 @@
        <div class="db_sort"><b>{{column.name}}</b></div>
       </ng-template>
       <ng-template let-row="row" ngx-datatable-cell-template>
-        <div class="col">{{row.Date}} </div>
+        <div class="col">{{row.lastAccessedAt}} </div>
       </ng-template>
     </ngx-datatable-column>
     <ngx-datatable-column name="Time">
@@ -30,7 +30,7 @@
        <div class="db_sort"><b>{{column.name}}</b></div>
       </ng-template>
       <ng-template let-row="row" ngx-datatable-cell-template>
-        <div class="forest">{{row.Time}}</div>
+        <div class="forest">10 am</div>
       </ng-template>
     </ngx-datatable-column>
     <ngx-datatable-column name="Doctor">
@@ -38,7 +38,7 @@
         <div class="db_sort"><b>{{column.name}}</b></div>
       </ng-template>
       <ng-template let-row="row" ngx-datatable-cell-template>
-        <div class="col">{{row.Doctor}}</div>
+        <div class="col">{{ row['doctor'].substring(row['doctor'].indexOf("#") + 1, row['doctor'].length)}}</div>
       </ng-template>
     </ngx-datatable-column>
     <ngx-datatable-column name="Action">
