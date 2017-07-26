@@ -14,7 +14,7 @@
         </div>
     </div>
 </div>
-<div class="container" *ngIf="dialogView!=='Report'">
+<div class="container" *ngIf="dialogView!=='Report' && doctorDetails">
     <div class="row header">
         <div class="col-sm-6 ">
             <div class="title">Authorize Report</div>
@@ -29,7 +29,7 @@
         <div class="col-sm-11">
             <label for="role " class="form-label">Doctor</label>
             <select class="search_box form-control">
-            <option *ngFor="let db of doctorDetails" [value]="db.Doctor">{{db.Doctor}}</option>
+            <option *ngFor="let doc of doctorDetails" [value]="db.Doctor">{{doc.name}}</option>
         </select>
         </div>
 

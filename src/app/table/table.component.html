@@ -14,7 +14,7 @@
         <div class="db_sort"><b>{{column.name}}</b></div>
       </ng-template>
       <ng-template let-row="row" ngx-datatable-cell-template>
-        <div class='col col-name'>{{row.EmrID}}</div>
+        <div class='col col-name'>{{row.name}}</div>
       </ng-template>
     </ngx-datatable-column>
     <ngx-datatable-column name="Date">
@@ -22,7 +22,7 @@
        <div class="db_sort"><b>{{column.name}}</b></div>
       </ng-template>
       <ng-template let-row="row" ngx-datatable-cell-template>
-        <div class="col">{{row.lastAccessedAt}} </div>
+        <div class="col">{{row.date}} </div>
       </ng-template>
     </ngx-datatable-column>
     <ngx-datatable-column name="Time">
@@ -30,7 +30,7 @@
        <div class="db_sort"><b>{{column.name}}</b></div>
       </ng-template>
       <ng-template let-row="row" ngx-datatable-cell-template>
-        <div class="forest">10 am</div>
+        <div class="forest">{{row.time}}</div>
       </ng-template>
     </ngx-datatable-column>
     <ngx-datatable-column name="Doctor">
