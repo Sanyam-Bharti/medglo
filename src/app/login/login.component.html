@@ -1,33 +1,29 @@
-<h1>MedGlo</h1>
-<div class="col-md-12 image">
-  <div class="col-md-8  "></div>
-  <div class="col-md-4 ">
-    <h2>Login</h2>
-    <form name="form" #f="ngForm" novalidate>
-      <div class="form-group">
-        <label for="name" class="form-label font"><b>Username</b></label>
-        <input type="text" class="form-control" name="name" [(ngModel)]="model.name" required />
-        <!-- <div *ngIf="f.submitted && !username.valid" class="help-block">Username is required</div> -->
-      </div>
-      <div class="form-group">
-        <label for="password"  class="form-label font"><b>Password</b></label>
-        <input type="password" class="form-control" name="password" required />
-        <!-- <div *ngIf="f.submitted && !password.valid" class="help-block">Password is required</div> -->
-      </div>
-      <div class="form-group">
-        <label for="role "  class="form-label font"><b>Role</b></label>
-        <!-- <input type="text" class="form-control" name="role"  [(ngModel)]="model.role" required /> -->
-        <md-select class="drop_box " name="role" [(ngModel)]="model.role">
-          <md-option *ngFor="let role of roles" [value]="role.role" required>{{role.role}}</md-option>
-        </md-select>
-        <!-- <md-select>
+<div class="image" id="bg">
+  <h2>Login</h2>
+  <form name="form" #f="ngForm" novalidate>
+    <div class="form-group">
+      <label for="name" class="form-label font"><b>Username</b></label>
+      <input type="text" class="form-control" name="name" [(ngModel)]="model.name" required />
+      <!-- <div *ngIf="f.submitted && !username.valid" class="help-block">Username is required</div> -->
+    </div>
+    <div class="form-group">
+      <label for="password" class="form-label font"><b>Password</b></label>
+      <input type="password" class="form-control" name="password" required />
+      <!-- <div *ngIf="f.submitted && !password.valid" class="help-block">Password is required</div> -->
+    </div>
+    <div class="form-group">
+      <label for="role " class="form-label font"><b>Role</b></label>
+      <!-- <input type="text" class="form-control" name="role"  [(ngModel)]="model.role" required /> -->
+      <md-select class="drop_box " name="role" [(ngModel)]="model.role">
+        <md-option *ngFor="let role of roles" [value]="role.role" required>{{role.role}}</md-option>
+      </md-select>
+      <!-- <md-select>
         <md-option [value]="Patient">Patient</md-option>
         <md-option [value]="Doctor">Doctor</md-option>
       </md-select> -->
-      </div>
-      <div class="form-group">
-        <button class="btn btn-primary" (click)="login()">Login</button>
-      </div>
-    </form>
-  </div>
+    </div>
+    <div class="form-group">
+      <button class="btn btn-primary" (click)="login()">Login</button>
+    </div>
+  </form>
 </div>
