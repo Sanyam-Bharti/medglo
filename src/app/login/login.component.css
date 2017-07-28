@@ -1,6 +1,5 @@
 .image {
     /* background-image: url("http://wallup.net/wp-content/uploads/2016/05/25/176883-minimalism-geometry-hexagon-simple_background-monochrome-white_background.png"); */
-   
     background-image: url("assets/Layer1.png");
 }
 .form-label {
@@ -12,12 +11,66 @@
     margin-left: 14px;
 }
 
+/* #bg {
+  position: fixed; 
+  /* Preserve aspet ratio */
+  /* min-width: 100%;
+  min-height: 100%; */
+/*} */
+
 #bg {
   position: fixed; 
-  top: -200; 
-  left: -1000; 
-
-  /* Preserve aspet ratio */
-  min-width: 100%;
-  min-height: 100%;
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
 }
+#bg #bgImg {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+}
+
+.centered {
+    z-index: 10;
+    width: 500px;
+    height:500px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+
+.txtwidth {
+    width:60%;
+}
+
+.userIcon {
+    background-image:url("assets/Forma1.png");   
+background-position:right;   
+background-repeat:no-repeat; 
+background-size: 8%;  
+padding-left:15px;
+}
+
+.passIcon {
+    background-image:url("assets/Shape1.png");   
+background-position:right;   
+background-repeat:no-repeat; 
+background-size: 8%;  
+padding-left:15px;
+}
+
+.clrNlbl {
+    background-color: white;
+    -webkit-text-fill-color: black
+}
+
