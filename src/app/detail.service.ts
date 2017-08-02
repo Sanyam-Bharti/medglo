@@ -6,7 +6,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class DetailService {
 
-    private service_url = "http://172.16.69.105:3000/api/";
+    private service_url = "http://172.16.16.186:3000/api/";
     constructor(private http: Http) { }
 
     getDetails(): Observable<any[]> {

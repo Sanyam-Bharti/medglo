@@ -29,7 +29,7 @@
         <div class="col-sm-11">
             <label for="role " class="form-label">Doctor</label>
             <select class="search_box form-control">
-            <option *ngFor="let doc of doctorDetails" [value]="db.Doctor">{{doc.name}}</option>
+            <option *ngFor="let doc of doctorDetails" [value]="doc.firstName">{{doc.firstName}}</option>
         </select>
         </div>
 
