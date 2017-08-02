@@ -1,8 +1,4 @@
-.image {
-    /* background-image: url("http://wallup.net/wp-content/uploads/2016/05/25/176883-minimalism-geometry-hexagon-simple_background-monochrome-white_background.png"); */
-        background-image: url("assets/Layer1.png");    
-       /*   */
-}
+
 .form-label {
     color: black;
     font-size: 14px;
@@ -39,8 +35,7 @@
   margin: auto; 
   min-width: 50%;
   min-height: 50%;
-      overflow: hidden;
-    z-index: 0;
+  filter: brightness(50%);
 }
 
 .centered {
@@ -80,7 +75,8 @@ padding-left:15px;
 .clrNlbl {
     background-color: white;
     -webkit-text-fill-color: black;
-    margin-left: 105px;
+	margin-left: 105px;
+	height: 45px;
 }
 
 .form-group {
@@ -91,5 +87,6 @@ padding-left:15px;
 
 .im1 {
         margin-bottom: 33px;
-        background-image: url("assets/Layer2.png");
-}
+        /* background-image: url("assets/Layer2.png"); */
+        background-repeat: no-repeat;
+} 
