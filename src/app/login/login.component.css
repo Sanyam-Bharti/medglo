@@ -70,6 +70,9 @@ background-position:right;
 background-repeat:no-repeat; 
 background-size: 8%;  
 padding-left:15px;
+background: #fff;
+border-radius: 4px;
+width: 60%;
 }
 
 .clrNlbl {
